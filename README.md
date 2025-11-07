@@ -150,9 +150,6 @@ This document outlines the step-by-step process for deploying a 2-tier web appli
     ```
 <img src="<img width="1909" height="1035" alt="3" src="https://github.com/user-attachments/assets/af6b600b-2343-4ff1-9d0e-74bd8c15ae21" />
 ">
-<img src="<img width="1725" height="914" alt="4" src="https://github.com/user-attachments/assets/a3c5ee2c-be6e-4d66-93e0-d6e8a2b0a44d" />
-" />
-">
 
 ---
 
