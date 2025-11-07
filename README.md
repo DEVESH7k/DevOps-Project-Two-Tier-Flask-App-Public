@@ -76,7 +76,8 @@ This document outlines the step-by-step process for deploying a 2-tier web appli
         * **Type:** Custom TCP, **Protocol:** TCP, **Port:** 5000 (for Flask), **Source:** Anywhere (0.0.0.0/0)
         * **Type:** Custom TCP, **Protocol:** TCP, **Port:** 8080 (for Jenkins), **Source:** Anywhere (0.0.0.0/0)
 
-<img src=" width="1898" height="839" alt="2" src="https://github.com/user-attachments/assets/ddcd147f-d318-4fe1-81e3-a2b04baf7411" />
+<img src="<img width="1898" height="839" alt="2" src="https://github.com/user-attachments/assets/cbd057d7-5b7d-4daf-8ac7-02646b190c60" />
+" />
 ">
 
 3.  **Connect to EC2 Instance:**
@@ -148,6 +149,9 @@ This document outlines the step-by-step process for deploying a 2-tier web appli
     sudo systemctl restart jenkins
     ```
 <img src="<img width="1909" height="1035" alt="3" src="https://github.com/user-attachments/assets/af6b600b-2343-4ff1-9d0e-74bd8c15ae21" />
+">
+<img src="<img width="1725" height="914" alt="4" src="https://github.com/user-attachments/assets/a3c5ee2c-be6e-4d66-93e0-d6e8a2b0a44d" />
+" />
 ">
 
 ---
