@@ -76,7 +76,8 @@ This document outlines the step-by-step process for deploying a 2-tier web appli
         * **Type:** Custom TCP, **Protocol:** TCP, **Port:** 5000 (for Flask), **Source:** Anywhere (0.0.0.0/0)
         * **Type:** Custom TCP, **Protocol:** TCP, **Port:** 8080 (for Jenkins), **Source:** Anywhere (0.0.0.0/0)
 
-<img src="diagrams/02.png">
+<img src="<img width="1898" height="839" alt="2" src="https://github.com/user-attachments/assets/ddcd147f-d318-4fe1-81e3-a2b04baf7411" />
+">
 
 3.  **Connect to EC2 Instance:**
     * Use SSH to connect to the instance's public IP address.
@@ -146,7 +147,8 @@ This document outlines the step-by-step process for deploying a 2-tier web appli
     sudo usermod -aG docker jenkins
     sudo systemctl restart jenkins
     ```
-<img src="diagrams/03.png">
+<img src="<img width="1909" height="1035" alt="3" src="https://github.com/user-attachments/assets/af6b600b-2343-4ff1-9d0e-74bd8c15ae21" />
+">
 
 ---
 
@@ -284,7 +286,8 @@ pipeline {
     * Verify the **Script Path** is `Jenkinsfile`.
     * Save the configuration.
 
-<img src="diagrams/04.png">
+<img src="<img width="1725" height="914" alt="4" src="https://github.com/user-attachments/assets/5365f2d2-1bcc-4d7e-bc1f-2edc815c1782" />
+">
 
 3.  **Run the Pipeline:**
     * Click **Build Now** to trigger the pipeline manually for the first time.
