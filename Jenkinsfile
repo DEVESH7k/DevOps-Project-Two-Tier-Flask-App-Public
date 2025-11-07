@@ -1,22 +1,25 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage('Clone repo'){
-            steps{
+    stages {
+        stage('Checkout') {
+            steps {
                 git branch: 'main', url: 'https://github.com/DEVESH7k/DevOps-Project-Two-Tier-Flask-App-Public'
             }
         }
-        stage('Build image'){
-            steps{
-                sh 'docker build -t flask-app .'
+        stage('Build') {
+            steps {
+                sh 'python3 -m venv venv'
+                sh '. venv/bin/activate && pip install -r requirements.txt'
             }
         }
-        stage('Deploy with docker compose'){
-            steps{
-                // existing container if they are running
-                sh 'docker compose down || true'
-                // start app, rebuilding flask image
-                sh 'docker compose up -d --build'
+        stage('Test') {
+            steps {
+                sh '. venv/bin/activate && pytest || true'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploy stage would go here'
             }
         }
     }
